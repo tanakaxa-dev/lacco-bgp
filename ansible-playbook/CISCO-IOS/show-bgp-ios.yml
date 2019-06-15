@@ -7,7 +7,6 @@
         commands:
           - show clock
           - show ip bgp
-          - show ip route
       register: result
 
     - name: show clock
@@ -18,6 +17,3 @@
       debug:
         msg: "{{ result.stdout_lines[1] }}"
 
-    - name: show ip route
-      debug:
-        msg: "{{ result.stdout_lines[2] }}"
