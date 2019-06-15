@@ -1,0 +1,23 @@
+- hosts: ios
+  gather_facts: no
+
+  tasks:
+    - name: collect
+      ios_command:
+        commands:
+          - show clock
+          - show ip bgp
+          - show ip route
+      register: result
+
+    - name: show clock
+      debug:
+        msg: "{{ result.stdout_lines[0] }}"
+
+    - name: show ip bgp
+      debug:
+        msg: "{{ result.stdout_lines[1] }}"
+
+    - name: show ip route
+      debug:
+        msg: "{{ result.stdout_lines[2] }}"
