@@ -1,6 +1,6 @@
 # BGP Status
 
-Sun Jun 16 18:21:12 JST 2019
+Mon Jun 17 01:48:19 JST 2019
 ## tanakaxa-ix AS:64513
 
 ```
@@ -13,14 +13,14 @@ ok: [tanakaxa-ix]
 TASK [show clock] **************************************************************
 ok: [tanakaxa-ix] => {
     "msg": [
-        "Sunday, 16 June 2019 18:21:10 +09 00"
+        "Monday, 17 June 2019 01:48:17 +09 00"
     ]
 }
 
 TASK [show ip bgp] *************************************************************
 ok: [tanakaxa-ix] => {
     "msg": [
-        "BGP table version is 158, local router ID is 172.18.19.1",
+        "BGP table version is 160, local router ID is 172.18.19.1",
         "Local AS number 64513",
         "Status codes: s - suppressed, * - valid, h - history",
         "              > - best, i - internal",
@@ -67,14 +67,14 @@ ok: [tanakaxa-cis]
 TASK [show clock] **************************************************************
 ok: [tanakaxa-cis] => {
     "msg": [
-        "18:21:05.208 JST Sun Jun 16 2019"
+        "01:48:08.097 JST Mon Jun 17 2019"
     ]
 }
 
 TASK [show ip bgp] *************************************************************
 ok: [tanakaxa-cis] => {
     "msg": [
-        "BGP table version is 177, local router ID is 172.18.19.5",
+        "BGP table version is 184, local router ID is 172.18.19.5",
         "Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, ",
         "              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, ",
         "              x best-external, a additional-path, c RIB-compressed, ",
