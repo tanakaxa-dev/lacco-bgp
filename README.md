@@ -1,6 +1,6 @@
 # BGP Status
 
-Sun Jun 23 11:23:03 JST 2019
+Sun Jun 23 12:16:45 JST 2019
 ## tanakaxa-ix AS:64513
 
 ```
@@ -13,7 +13,7 @@ ok: [tanakaxa-ix]
 TASK [show clock] **************************************************************
 ok: [tanakaxa-ix] => {
     "msg": [
-        "Sunday, 23 June 2019 11:22:44 +09 00"
+        "Sunday, 23 June 2019 12:15:31 +09 00"
     ]
 }
 
@@ -60,5 +60,9 @@ tanakaxa-ix                : ok=3    changed=0    unreachable=0    failed=0    s
 ## tanakaxa-cis AS:64514
 
 ```
+
+PLAY [ios] *********************************************************************
+
+TASK [collect] *****************************************************************
 ```
 
