@@ -1,6 +1,6 @@
 # BGP Status
 
-Thu Jul 11 21:32:26 JST 2019
+Sat Jul 13 20:47:11 JST 2019
 ## tanakaxa-ix AS:64513
 
 ```
@@ -13,14 +13,14 @@ ok: [tanakaxa-ix]
 TASK [show clock] **************************************************************
 ok: [tanakaxa-ix] => {
     "msg": [
-        "Thursday, 11 July 2019 21:32:24 +09 00"
+        "Saturday, 13 July 2019 20:47:10 +09 00"
     ]
 }
 
 TASK [show ip bgp] *************************************************************
 ok: [tanakaxa-ix] => {
     "msg": [
-        "BGP table version is 50, local router ID is 172.18.19.1",
+        "BGP table version is 56, local router ID is 172.18.19.1",
         "Local AS number 64513",
         "Status codes: s - suppressed, * - valid, h - history",
         "              > - best, i - internal",
@@ -45,13 +45,9 @@ ok: [tanakaxa-ix] => {
         "*>                    172.18.18.1                            64512 64515 i",
         "*  172.18.20.32/27    172.18.18.6                            64514 64515 i",
         "*>                    172.18.18.1                            64512 64515 i",
-        "*  172.18.21.0/30     172.18.18.6                            64514 64515 64516 i",
-        "*>                    172.18.18.1                            64512 64516 i",
-        "*  172.18.21.4/30     172.18.18.6                            64514 64515 64516 i",
-        "*>                    172.18.18.1                            64512 64516 i",
         "*> 192.168.211.0/30   172.18.18.6              0             64514 i",
         "",
-        "Total number of prefixes 23"
+        "Total number of prefixes 19"
     ]
 }
 
@@ -72,14 +68,14 @@ ok: [tanakaxa-cis]
 TASK [show clock] **************************************************************
 ok: [tanakaxa-cis] => {
     "msg": [
-        "21:32:18.920 JST Thu Jul 11 2019"
+        "20:47:04.963 JST Sat Jul 13 2019"
     ]
 }
 
 TASK [show ip bgp] *************************************************************
 ok: [tanakaxa-cis] => {
     "msg": [
-        "BGP table version is 57, local router ID is 192.168.211.1",
+        "BGP table version is 61, local router ID is 192.168.211.1",
         "Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, ",
         "              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, ",
         "              x best-external, a additional-path, c RIB-compressed, ",
@@ -110,10 +106,6 @@ ok: [tanakaxa-cis] => {
         " *>                    172.18.20.1              0             0 64515 i",
         " *    172.18.20.32/27  172.18.18.5                            0 64513 64512 64515 i",
         " *>                    172.18.20.1              0             0 64515 i",
-        " *>   172.18.21.0/30   172.18.20.1                            0 64515 64516 i",
-        " *                     172.18.18.5                            0 64513 64512 64516 i",
-        " *>   172.18.21.4/30   172.18.20.1                            0 64515 64516 i",
-        " *                     172.18.18.5                            0 64513 64512 64516 i",
         " *>   192.168.211.0/30 0.0.0.0                  0         32768 i"
     ]
 }
